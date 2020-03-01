@@ -19,20 +19,16 @@ for i in range(0,1000):
         GroceryLists[i][0].append(Subset[a])
 for i in range(0,len(GroceryLists)):
     for j in range(0,len(GroceryLists[i][0])):
-            GroceryLists[i][1] += round(GroceryLists[i][0][j][-1], 2)
+            GroceryLists[i][1] += GroceryLists[i][0][j][-1]
             GroceryLists[i][0][j][0] = str(GroceryLists[i][0][j][0])
 print(type(GroceryLists))
 FirstDf = [item[0] for item in GroceryLists]
-with open("ShoppingLists.json", "w") as outfile:
-    json.dumps(FirstDf)
 AllLists = [[] for i in range(len(FirstDf))]
 for i in range(0, len(FirstDf)):
     for j in range(0, len(FirstDf[i])):
         AllLists[i].append((FirstDf[i][j][0]))
-Spent = [round(GroceryLists[_][1], 2) for _ in range(0, len(GroceryLists))]
-with open("Spent.json", "w") as outfile:
-    json.dumps(Spent)
-# print(Spent)
+Spent = [GroceryLists[_][1] for _ in range(0, len(GroceryLists))]
+print(Spent)
 # print(len(AllLists))
 # te = TransactionEncoder()
 # te_ary = te.fit(AllLists).transform(AllLists)
