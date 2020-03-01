@@ -10,7 +10,7 @@ GroceryProducts = GroceryProducts.assign(price = [round(uniform(1, 100), 2) for 
 a = GroceryProducts[['COMMODITY_DESC', 'price']]
 Subset = a.values.tolist()
 
-GroceryLists = [[[],0.0] for i in range(0,1000000)]
+GroceryLists = [[[],0.0] for i in range(0,1000)]
 for i in range(0,1000):
     for j in range(0, randint(1,20)):
         a = randint(0, len(Subset)-1)
@@ -24,6 +24,7 @@ AllLists = [[] for i in range(len(FirstDf))]
 for i in range(0, len(FirstDf)):
     for j in range(0, len(FirstDf[i])):
         AllLists[i].append((FirstDf[i][j][0]))
+print(len(AllLists))
 # te = TransactionEncoder()
 # te_ary = te.fit(AllLists).transform(AllLists)
 # df = pd.DataFrame(te_ary, columns=te.columns_)a
