@@ -24,14 +24,14 @@ for i in range(0,len(GroceryLists)):
 print(type(GroceryLists))
 FirstDf = [item[0] for item in GroceryLists]
 with open("ShoppingLists.json", "w") as outfile:
-    json.dumps(FirstDf)
+    json.dump(FirstDf, outfile)
 AllLists = [[] for i in range(len(FirstDf))]
 for i in range(0, len(FirstDf)):
     for j in range(0, len(FirstDf[i])):
         AllLists[i].append((FirstDf[i][j][0]))
 Spent = [round(GroceryLists[_][1], 2) for _ in range(0, len(GroceryLists))]
 with open("Spent.json", "w") as outfile:
-    json.dumps(Spent)
+    json.dump(Spent,outfile)
 # print(Spent)
 # print(len(AllLists))
 # te = TransactionEncoder()
