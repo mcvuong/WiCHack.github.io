@@ -34,7 +34,7 @@
         Association for Women in Science
         Scientista
 
-2. iOS Mobil App
+2. iOS Mobile App
 
     We used **Xcode** (an integrated development environment for MacOS) to develop an **iOS** application using **Storyboards** and **Swift**. The application allows users to login/signup to an account where they view their transaction history and how much money was donated to a STEM organization of their choice.
     
