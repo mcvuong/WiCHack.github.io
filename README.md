@@ -36,5 +36,5 @@
 
 2. iOS Mobil App
 
-    We used **Xcode** (an integrated development environment for MacOS) to develop an **iOS** application using **Stroyboards**. The application allows users to login/signup to an account where they view their transaction history and how much money was donated to a STEM organization of their choice.
+    We used **Xcode** (an integrated development environment for MacOS) to develop an **iOS** application using **Storyboards** and **Swift**. The application allows users to login/signup to an account where they view their transaction history and how much money was donated to a STEM organization of their choice.
     
