@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kAW-kp-keJ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="first" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="application" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="qqZ-Zh-MjU">
+                                <rect key="frame" x="20" y="832" width="374" height="32"/>
+                                <segments>
+                                    <segment title="" image="house.fill" catalog="system"/>
+                                    <segment title="" image="person.fill" catalog="system"/>
+                                </segments>
+                                <connections>
+                                    <segue destination="a5t-jM-Rjt" kind="show" id="yEF-cO-GK4"/>
+                                </connections>
+                            </segmentedControl>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fashion Forward" translatesAutoresizingMaskIntoConstraints="NO" id="hNt-Y8-cUx">
+                                <rect key="frame" x="20" y="88" width="374" height="199"/>
+                            </imageView>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MkG-TD-dgd">
+                                <rect key="frame" x="20" y="311" width="374" height="449"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences" javaScriptCanOpenWindowsAutomatically="YES"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hNt-Y8-cUx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1Uk-oT-N2b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qqZ-Zh-MjU" secondAttribute="trailing" constant="20" id="1Xy-QZ-a77"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hNt-Y8-cUx" secondAttribute="trailing" constant="20" id="3Fc-OB-3KP"/>
+                            <constraint firstItem="qqZ-Zh-MjU" firstAttribute="top" secondItem="MkG-TD-dgd" secondAttribute="bottom" constant="72" id="5R8-9X-x6K"/>
+                            <constraint firstItem="MkG-TD-dgd" firstAttribute="top" secondItem="hNt-Y8-cUx" secondAttribute="bottom" constant="24" id="6dz-Jn-XKI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MkG-TD-dgd" secondAttribute="trailing" constant="20" id="Bsf-uS-1Ik"/>
+                            <constraint firstItem="qqZ-Zh-MjU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="CQQ-yn-lLP"/>
+                            <constraint firstItem="hNt-Y8-cUx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Hk8-7o-f4H"/>
+                            <constraint firstItem="MkG-TD-dgd" firstAttribute="top" secondItem="hNt-Y8-cUx" secondAttribute="bottom" constant="24" id="LAK-pC-NHx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hNt-Y8-cUx" secondAttribute="trailing" constant="20" id="MoL-YG-EFb"/>
+                            <constraint firstItem="hNt-Y8-cUx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="OM7-pe-7kc"/>
+                            <constraint firstItem="hNt-Y8-cUx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="OkL-VV-Tvh"/>
+                            <constraint firstItem="MkG-TD-dgd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="PuU-zU-fEh"/>
+                            <constraint firstItem="qqZ-Zh-MjU" firstAttribute="top" secondItem="MkG-TD-dgd" secondAttribute="bottom" constant="72" id="U1e-zM-WvR"/>
+                            <constraint firstAttribute="bottom" secondItem="qqZ-Zh-MjU" secondAttribute="bottom" constant="33" id="lTe-wd-gfg"/>
+                            <constraint firstItem="MkG-TD-dgd" firstAttribute="top" secondItem="hNt-Y8-cUx" secondAttribute="bottom" constant="24" id="mac-9J-TOA"/>
+                            <constraint firstItem="hNt-Y8-cUx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ygy-ha-Iyi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PSv-4t-XPh"/>
+                    <connections>
+                        <outlet property="WebView" destination="MkG-TD-dgd" id="hnI-Eq-Sd6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="115.84821428571428"/>
+        </scene>
+        <!--second-->
+        <scene sceneID="vfa-iB-c3j">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XDX-Oc-rHe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="SecondViewController" referencedIdentifier="second" id="a5t-jM-Rjt" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="pT2-0C-A6I"/>
+                </viewControllerPlaceholder>
+            </objects>
+            <point key="canvasLocation" x="1042" y="608"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uVJ-fr-9If">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D1N-4u-2tr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kAW-kp-keJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nRw-Td-Gz9">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Zuq-Sy-rXL"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="115.84821428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Fashion Forward" width="370" height="199"/>
+        <image name="house.fill" catalog="system" width="64" height="52"/>
+        <image name="person.fill" catalog="system" width="64" height="60"/>
+    </resources>
+</document>
