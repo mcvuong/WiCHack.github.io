@@ -5,7 +5,6 @@ var logger = require('morgan');
 var session = require('express-session');
 const axios = require('axios');
 var bodyParser = require('body-parser'); 
-const auth = require('./auth');
 require('dotenv').config();
 var WEGMANS_KEY = process.env.WEGMANS_KEY;
 
@@ -75,6 +74,7 @@ app.post('/signup', function(request, response) {
 app.post('/login', function(request, response) {
   response.render('datapage');
 });
+
 
 //Authenticates signup
 app.post('/auth', function(request, response) {
