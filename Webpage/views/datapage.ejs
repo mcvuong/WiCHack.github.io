@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<% var ran = Math.floor((Math.random() * 3) + 1); %>
+<% var data = [[["HARDWARE SUPPLIES", 4.34], ["ANTACIDS", 8.3], ["INSECTICIDES", 58.34], ["COLD AND FLU", 76.3], ["DRY MIX DESSERTS", 52.39], ["CIGARETTES", 52.45], ["CONTINUITIES", 4.13], ["BAG SNACKS", 6.04], ["COOKIES", 3.04], ["RESTRICTED DIET", 56.82]],
+[["FACIAL TISS/DNR NAPKIN", 37.31], ["CHRISTMAS  SEASONAL", 50.46], ["MAGAZINE", 16.82], ["PWDR/CRYSTL DRNK MX", 15.08], ["OLIVES", 46.04], ["MELONS", 25.55]],
+[["CHIPS&SNACKS", 85.34], ["CAKES", 3.95], ["BACON", 20.11], ["MAGAZINE", 4.82], ["CAT FOOD", 57.26], ["HAIR CARE ACCESSORIES", 35.5], ["VITAMINS", 18.2], ["BAKED SWEET GOODS", 73.22],  ["BEEF", 88.59], ["FLORAL-FRESH CUT", 53.21], ["CONDIMENTS/SAUCES", 99.8], ["CONDIMENTS", 61.15], ["LUNCHMEAT", 24.85], ["SALD DRSNG/SNDWCH SPRD", 55.21]]]; %>
+<% var total = 3936.50; %>
+<% var donate = 183.49; %>
+<% var recommend = [[["DISHWASH DETERGENTS", 9.19], ["BEERS/ALES", 4.64], ["LAUNDRY DETERGENTS", 6.49]],
+[["GREETING CARDS/WRAP/PARTY SPLY", 3.44], ["CANDLES/ACCESSORIES", 7.99], ["CANDY - PACKAGED", 3.45]],
+[["DRY MIX DESSERTS", 5.90], ["ICE CREAM/MILK/SHERBTS", 3.98], ["SOFT DRINKS", 2.99]]]; %>
+<head>
+   <title>Data Page</title>
+   <link href="/css/login.css" rel="stylesheet" type="text/css">
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Groceries Help Women in STEM</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Logout</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+  <div class="container">
+      <p>Total Amount Purchased: $<%= total %></p>        
+      <p>Total Amount Donated: $<%= donate %></p>   
+    <h2>Previous Purchase</h2>             
+    <table class="table table-dark table-hover">
+      <thead>
+        <tr>
+          <th>Product Name</th>
+          <th>Product Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for(var i=0; i < data[ran].length; i++) { %>
+          <tr>
+            <td><%= data[ran][i][0] %></td>
+            <td><%= data[ran][i][1] %></td>
+          </tr>
+       <% } %>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="container">
+      <h2>Recommended Products</h2>              
+      <table class="table table-dark table-hover">
+        <thead>
+          <tr>
+            <th>Product Name</th>
+            <th>Product Price (per unit)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% for(var i=0; i < recommend[ran].length; i++) { %>
+            <tr>
+              <td><%= recommend[ran][i][0] %></td>
+              <td><%= recommend[ran][i][1] %></td>
+            </tr>
+         <% } %>
+        </tbody>
+      </table>
+    </div>
+  
+</body>
+</html>

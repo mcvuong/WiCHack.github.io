@@ -1,0 +1,137 @@
+.login-box{
+    background: rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    width: 50%;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 10px 30px;
+}
+
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.login-box p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+
+.login-box input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.login-box input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.login-box a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+}
+
+
+.signup-button {
+  text-align: center;
+  height: 40px;
+  margin-top: 6%;
+}
+
+.main-button {
+  text-align: center;
+  height: 30px;
+}
+
+
+
+.login-button {
+    border: none;
+    outline: none;
+    height: 13%;
+    width: 75%;
+    background: #F8F9FA;
+    color: black;
+    font-size: 18px;
+    border-radius: 20px;
+    text-align: center;
+    margin-left:13%;
+  }
+
+  body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+
+
+
+.box{
+    background: rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    width: 50%;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 10px 30px;
+}
+
+
+.box p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.box input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.box input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.box a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+}
+
+
+.signup {
+    border: none;
+    outline: none;
+    background: #F8F9FA;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    border-radius: 20px;
+    text-align: center;
+    margin-left:13%;
+    height: 13%;
+    width: 75%;
+  }
+
+  .forms-body {
+    display: flex;
+    box-sizing: border-box;
+    padding: 10px;
+}
