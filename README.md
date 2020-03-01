@@ -22,9 +22,9 @@
 
     We used **EJS** (Embedded JavaScript templates) for front end, which is a templating language that allows you to generate HTML. EJS was used as a templating engine for **Node.js** for backend, specifically Express. 
 
-    The home page of the webpage is a simple navigation page that allows users to login/signup to an account where they view their transaction history, how much money was donated to a STEM organization of their choice, as well as explore a selection of Women in STEM Organizations the customer might consider contributing to.
+    The home page of the webpage is a simple navigation page that allows users to login/signup to an account where they view their transaction history, how much money was donated to a STEM organization of their choice, as well as explore a selection of Women in STEM organizations the customer might consider contributing to.
 
-    Examples of Women in STEM Programs You Can Support
+    Examples of Women in STEM organizations You Can Support
     
         WiCs
         National Girls Collaborative Project
